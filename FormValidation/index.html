@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FormValidate</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+    <img decoding="async" src="approval.png" width="40px">
+
+    <div class="input-group">
+      <label>Full Name</label>
+      <input type="text" class="fullName" placeholder="Enter your name">
+      <span id="nameError">*name is required</span>
+    </div>
+
+    <div class="input-group">
+      <label>Phone No.</label>
+      <input type="tel" class="phoneNo" placeholder="123 456 7890">  
+      <span id="phoneError">*phone is required</span>
+    </div>
+
+    <div class="input-group">
+      <label>Email id</label>
+      <input type="email" class="email" placeholder="Enter Email">  
+      <span id="emailError">*email is required</span>
+    </div>
+
+      
+    <div class="input-group">
+      <label>Your Message</label>
+      <textarea rows="5" class="message" placeholder="Enter your message"></textarea>
+      <span id="txtMessageError">*message is required</span>
+    </div>
+
+      <button>Submit</button>
+    </form>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

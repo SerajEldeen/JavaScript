@@ -1,0 +1,170 @@
+body{
+  background: linear-gradient(320deg,#eb92be,#ffef78,#63c9b4);
+}
+button{
+  cursor: pointer;
+}
+button:active{
+  color:#d72880;
+}
+.divide:active
+,.multiply:active
+,.minus:active
+,.plus:active
+,.equal:active{
+  color: rgb(59, 59, 61);
+}
+
+.container .calc{
+  background-color: rgba(255, 255,255, 0.34);
+  width: 280px;
+  height: 320px;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5,auto);
+  grid-template-areas: 
+  "clear plus-minus percent divide"
+  "seven eight nine multiply"
+  "four five six minus"
+  "one two three plus"
+  "zero zero dot equal";
+  gap:5px;
+  padding: 10px 5px;
+  border-color: rgba(255, 255,255, 0.34);
+
+}
+.container .box{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.clear {
+  grid-area: clear;
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.Del {
+  grid-area: plus-minus;
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.percent {
+  grid-area: percent; 
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.divide {
+  grid-area: divide;
+  background-color: #d72880;
+  border-color: #d72880;
+}
+.seven {
+  grid-area: seven;
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.eight {
+  grid-area: eight;
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.nine {
+  grid-area: nine;
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.multiply {
+  grid-area: multiply;
+  background-color: #d72880;
+  border-color: #d72880;
+}
+.four {
+  grid-area: four; 
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.five {
+  grid-area: five;
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.six {
+  grid-area: six;
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.minus {
+  grid-area: minus; 
+  background-color: #d72880;
+  border-color: #d72880;
+}
+.one {
+  grid-area: one; 
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.two {
+  grid-area: two;
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.three {
+  grid-area: three; 
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.plus {
+  grid-area: plus; 
+  background-color: #d72880;
+  border-color: #d72880;
+}
+.zero {
+  grid-area: zero;
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.dot {
+  grid-area: dot; 
+  color: black;
+  background-color:white;
+  border-color:white;
+}
+.equal {
+  grid-area: equal; 
+  background-color: #d72880;
+  border-color: #d72880;
+}
+button{
+  border-radius: 30px;
+  border: 1px solid;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  color: white;
+}
+.container .calculator-screen{
+  width: 284px;
+  height:200px;
+  color: black;
+  background-color: rgba(255, 255,255, 0.34);
+  border: 1px solid rgba(255, 255,255, 0.34);
+  font-size: 30px; 
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}

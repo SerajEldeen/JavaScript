@@ -1,0 +1,30 @@
+body{
+  background-color:#250057;
+  box-sizing: border-box;
+}
+div{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  max-width: 100%;
+}
+input{
+  outline: none;
+  border:solid 1px white;
+  border-radius: 15px;
+  padding: 20px 60px;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img{
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+img:nth-of-type(2){
+  visibility: hidden;
+}
