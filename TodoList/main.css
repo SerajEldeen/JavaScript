@@ -35,6 +35,18 @@ body{
   margin-bottom: 25px;
   margin-top: 20px;
 }
+@media(max-width:480px){
+  .row{
+    flex-direction: column;
+  }
+  .row input{
+    padding: 0;
+    text-align: center;
+  }
+  .todolist h2{
+    text-align: center;
+  }
+}
 .row input{
   flex: 1;
   padding: 10px 20px;

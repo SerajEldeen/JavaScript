@@ -47,6 +47,18 @@ body{
   justify-content: space-between;
   align-items: center
 }
+@media(max-width:480px){
+  .search{
+    flex-direction: column;
+  }
+  .search input{
+    width: inherit;
+    margin-bottom: 10px;
+  }
+  .details{
+    flex-direction: column;
+  }
+}
 .search input{
   outline: none;
   padding: 10px 25px;
